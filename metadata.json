@@ -1,0 +1,5 @@
+{
+  "name": "LingoQuest",
+  "description": "Um aplicativo de aprendizado de idiomas gamificado inspirado no Duolingo.",
+  "requestFramePermissions": []
+}
