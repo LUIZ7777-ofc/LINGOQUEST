@@ -4,6 +4,8 @@ import { BottomBar } from './components/BottomBar';
 import { PathView } from './components/PathView';
 import { LessonView } from './components/LessonView';
 import { LeagueView } from './components/LeagueView';
+import { QuestsView } from './components/QuestsView';
+import { ProfileView } from './components/ProfileView';
 import { mockCourses } from './data/mockData';
 import { UserState } from './types';
 
@@ -109,15 +111,12 @@ export default function App() {
               <LeagueView />
             )}
             
-            {activeTab !== 'home' && activeTab !== 'leaderboard' && (
-              <div className="flex-1 flex items-center justify-center p-6 text-center">
-                <div className="max-w-md">
-                  <h2 className="text-2xl font-bold mb-4 text-zinc-300">Em Breve</h2>
-                  <p className="text-zinc-500">
-                    Esta seção ainda está em desenvolvimento. Continue aprendendo na aba principal!
-                  </p>
-                </div>
-              </div>
+            {activeTab === 'quests' && (
+              <QuestsView userState={userState} />
+            )}
+            
+            {activeTab === 'profile' && (
+              <ProfileView userState={userState} />
             )}
           </main>
           

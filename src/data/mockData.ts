@@ -204,6 +204,30 @@ export const mockCourses: Course[] = [
             }
           }
         ]
+      },
+      {
+        id: 'chess-lesson-3',
+        title: 'Xeque-Mate',
+        questions: [
+          {
+            id: 'chess-q5',
+            type: 'chess_board',
+            prompt: 'Mate do Pastor: Para qual casa a Dama Branca deve ir para dar Xeque-Mate?',
+            chessConfig: {
+              fen: 'r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR',
+              targetSquare: 'f7'
+            }
+          },
+          {
+            id: 'chess-q6',
+            type: 'chess_board',
+            prompt: 'Mate da Gaveta: Para qual casa a Torre Branca deve ir para dar Xeque-Mate?',
+            chessConfig: {
+              fen: '6k1/5ppp/8/8/8/8/8/4R1K1',
+              targetSquare: 'e8'
+            }
+          }
+        ]
       }
     ]
   }
